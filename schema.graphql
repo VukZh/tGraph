@@ -1,0 +1,8 @@
+type GetDataFeedEvent @entity(immutable: true) {
+  id: Bytes!
+  addr: Bytes! # address
+  data: BigInt! # int256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

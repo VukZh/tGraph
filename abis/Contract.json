@@ -1,0 +1,39 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "addr",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "data",
+        "type": "int256"
+      }
+    ],
+    "name": "GetDataFeedEvent",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "addr", "type": "address" }
+    ],
+    "name": "getDataFeed",
+    "outputs": [{ "internalType": "int256", "name": "", "type": "int256" }],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "coinAddress", "type": "address" }
+    ],
+    "name": "lastDataFeeds",
+    "outputs": [{ "internalType": "int256", "name": "data", "type": "int256" }],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
